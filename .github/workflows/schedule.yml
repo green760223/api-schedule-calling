@@ -2,7 +2,6 @@ name: Schedule API Call
 
 on:
   schedule:
-    # 定时运行的计划，使用 POSIX cron 语法。下面的例子表示每 14 分钟运行一次。
     - cron: '*/14 * * * *'
 
 jobs:
@@ -11,12 +10,12 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
-        python-version: '3.x' # 或您脚本所需的任何特定版本
+        python-version: '3.10' # 或您脚本所需的任何特定版本
 
     - name: Install dependencies
       run: |
