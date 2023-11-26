@@ -1,6 +1,4 @@
 import requests
-import schedule
-import time
 
 
 def call_api():
@@ -8,9 +6,5 @@ def call_api():
     print(f"Response from API: {res.status_code}")
 
 
-schedule.every(1).minutes.do(call_api)
+call_api()
 
-# while True:
-#     schedule.run_pending()
-#     time.sleep(2)
-#     print("sleeping...")
