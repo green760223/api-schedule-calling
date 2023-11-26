@@ -1,6 +1,6 @@
 # api-schedule-calling
-This project is designed to periodically call an external API, thereby preventing the Render server from entering downtime.
 ![Workflow Status](https://github.com/green760223/api-schedule-calling/actions/workflows/schedule.yml/badge.svg)
+This project is designed to periodically call an external API, thereby preventing the Render server from entering downtime.
 
 ## Usage
 To run this project, follow these steps:
