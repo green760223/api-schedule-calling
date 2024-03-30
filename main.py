@@ -2,12 +2,17 @@ import requests
 
 
 def call_api():
-    try:
-        res = requests.get(url="https://feedback-json-data-server.onrender.com/db")
-        print(f"Response from API: {res.status_code}")
-    except Exception as e:
-        print(f"Error occurred: {e}")
+    urls = [
+        "https://feedback-json-data-server.onrender.com/db",
+        "https://api-proxy-service.onrender.com"
+    ]
+
+    for url in urls:
+        try:
+            res = requests.get(url=url)
+            print(f"Response from {url}: {res.status_code}")
+        except Exception as e:
+            print(f"Error occurred {url}: {e}")
 
 
 call_api()
-
