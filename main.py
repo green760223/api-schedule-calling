@@ -4,7 +4,8 @@ import requests
 def call_api():
     urls = [
         "https://feedback-json-data-server.onrender.com/db",
-        "https://api-proxy-service.onrender.com"
+        "https://api-proxy-service.onrender.com",
+        "https://django-rest-api-ugje.onrender.com/api/users/"
     ]
 
     for url in urls:
